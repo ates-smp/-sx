@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>xshezz.com | Espor Takip ve Canlı Skorlar</title>
+    <title>xshezz.com | Profesyonel Espor Takip ve Oyuncu İstatistikleri</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts'tan espor tarzı modern bir yazı tipi ekledik -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- ÜST MENÜ (NAVBAR) -->
     <header>
-        <div class="logo">XSHEZZ</div>
+        <div class="logo">X<span>SHEZZ</span></div>
         <nav>
             <a href="#" class="active">Ana Sayfa</a>
-            <a href="#">Canlı Skorlar</a>
+            <a href="#maclar">Canlı Skorlar</a>
+            <a href="#oyuncular">Profesyonel Oyuncular</a>
             <a href="#">Turnuvalar</a>
-            <a href="#">Fikstür</a>
         </nav>
     </header>
 
-    <!-- 1. REKLAM ALANI (BAŞLIK ALTI - EN ÇOK GÖRÜNEN YER) -->
+    <!-- 1. REKLAM ALANI (BAŞLIK ALTI) -->
     <div class="reklam-konteyner banner-ust">
         <div class="reklam-alani">
             <span>[REKLAM ALANI - 1]</span>
@@ -32,41 +31,37 @@
     <!-- ANA İÇERİK ALANI -->
     <main class="icerik-alani">
         
-        <!-- MAÇ LİSTESİ SEKTÖRÜ -->
-        <section class="maclar-kapsayici">
-            <h2>GÜNÜN ESPOR MAÇLARI</h2>
+        <!-- SOL TARAF: MAÇLAR VE OYUNCULAR -->
+        <div class="sol-kolon">
             
-            <!-- Örnek Maç 1 (Valorant) -->
-            <div class="mac-karti valorant">
-                <div class="oyun-turu">VALORANT</div>
-                <div class="takimlar">
-                    <div class="takim">
-                        <span class="takim-adi">Fnatic</span>
+            <!-- MAÇ LİSTESİ SEKTÖRÜ -->
+            <section id="maclar" class="sektor-kapsayici">
+                <h2 class="sektor-baslik"><span class="nokta-kirmizi"></span> GÜNÜN ESPOR MAÇLARI</h2>
+                
+                <!-- Maç 1 (Valorant) -->
+                <div class="mac-karti valorant">
+                    <div class="oyun-turu">VALORANT</div>
+                    <div class="takimlar">
+                        <div class="takim">Fnatic</div>
+                        <div class="skor">19:00</div>
+                        <div class="takim">Natus Vincere</div>
                     </div>
-                    <div class="skor">19:00</div>
-                    <div class="takim">
-                        <span class="takim-adi">Natus Vincere</span>
-                    </div>
+                    <div class="mac-durumu">Bekleniyor</div>
                 </div>
-                <div class="mac-durumu">Bekleniyor</div>
-            </div>
 
-            <!-- Örnek Maç 2 (CS2) -->
-            <div class="mac-karti cs2">
-                <div class="oyun-turu">CS2</div>
-                <div class="takimlar">
-                    <div class="takim">
-                        <span class="takim-adi">Natus Vincere</span>
+                <!-- Maç 2 (CS2) -->
+                <div class="mac-karti cs2">
+                    <div class="oyun-turu">CS2</div>
+                    <div class="takimlar">
+                        <div class="takim">Eternal Fire 🇹🇷</div>
+                        <div class="skor">2 - 1</div>
+                        <div class="takim">FaZe Clan</div>
                     </div>
-                    <div class="skor"> 2 - 1 </div>
-                    <div class="takim">
-                        <span class="takim-adi">FaZe Clan</span>
-                    </div>
+                    <div class="mac-durumu canli">CANLI</div>
                 </div>
-                <div class="mac-durumu canli">CANLI</div>
-            </div>
+            </section>
 
-            <!-- 2. REKLAM ALANI (İÇERİK ORTASI - EN ÇOK TIKLANAN YER) -->
+            <!-- 2. REKLAM ALANI (İÇERİK ORTASI) -->
             <div class="reklam-konteyner banner-orta">
                 <div class="reklam-alani">
                     <span>[REKLAM ALANI - 2]</span>
@@ -74,26 +69,74 @@
                 </div>
             </div>
 
-            <!-- Örnek Maç 3 (League of Legends) -->
-            <div class="mac-karti lol">
-                <div class="oyun-turu">LOL</div>
-                <div class="takimlar">
-                    <div class="takim">
-                        <span class="takim-adi">G2 Esports</span>
-                    </div>
-                    <div class="skor"> 1 - 0 </div>
-                    <div class="takim">
-                        <span class="takim-adi">T1</span>
-                    </div>
+            <!-- OYUNCU LİSTESİ SEKTÖRÜ -->
+            <section id="oyuncular" class="sektor-kapsayici">
+                <h2 class="sektor-baslik"><span class="nokta-mavi"></span> POPÜLER PROFESYONEL OYUNCULAR</h2>
+                
+                <div class="oyuncu-tablosu-kapsayici">
+                    <table class="oyuncu-tablosu">
+                        <thead>
+                            <tr>
+                                <th>Oyuncu Adı (ID)</th>
+                                <th>Takım</th>
+                                <th>Oyun</th>
+                                <th>Ülke</th>
+                                <th>Rol</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="oyuncu-id">w0nderful</td>
+                                <td class="oyuncu-takim">Natus Vincere</td>
+                                <td><span class="etiket cs2">CS2</span></td>
+                                <td>🇺🇦 Ukrayna</td>
+                                <td>AWPer</td>
+                            </tr>
+                            <tr>
+                                <td class="oyuncu-id">cned</td>
+                                <td class="oyuncu-takim">FUT Esports</td>
+                                <td><span class="etiket valorant">VALORANT</span></td>
+                                <td>🇹🇷 Türkiye</td>
+                                <td>Düellocu</td>
+                            </tr>
+                            <tr>
+                                <td class="oyuncu-id">ZywOo</td>
+                                <td class="oyuncu-takim">Team Vitality</td>
+                                <td><span class="etiket cs2">CS2</span></td>
+                                <td>🇫🇷 Fransa</td>
+                                <td>AWPer</td>
+                            </tr>
+                            <tr>
+                                <td class="oyuncu-id">Aspas</td>
+                                <td class="oyuncu-takim">Leviatán</td>
+                                <td><span class="etiket valorant">VALORANT</span></td>
+                                <td>🇧🇷 Brezilya</td>
+                                <td>Düellocu</td>
+                            </tr>
+                            <tr>
+                                <td class="oyuncu-id">XANTARES</td>
+                                <td class="oyuncu-takim">Eternal Fire</td>
+                                <td><span class="etiket cs2">CS2</span></td>
+                                <td>🇹🇷 Türkiye</td>
+                                <td>Rifler</td>
+                            </tr>
+                            <tr>
+                                <td class="oyuncu-id">TenZ</td>
+                                <td class="oyuncu-takim">Sentinels (İçerik Üretici)</td>
+                                <td><span class="etiket valorant">VALORANT</span></td>
+                                <td>🇨🇦 Kanada</td>
+                                <td>Esnek</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="mac-durumu bitti">BİTTİ</div>
-            </div>
+            </section>
 
-        </section>
+        </div>
 
         <!-- SAĞ KENAR ÇUBUĞU (SIDEBAR) -->
         <aside class="yan-panel">
-            <h3>POPÜLER TURNUVALAR</h3>
+            <h3>ÖNE ÇIKAN TURNUVALAR</h3>
             <div class="turnuva-liste">
                 <div class="turnuva-oge">🏆 VCT Masters 2026</div>
                 <div class="turnuva-oge">🏆 PGL Major 2026</div>
@@ -111,9 +154,9 @@
 
     </main>
 
-    <!-- ALT KISIM (FOOTER) -->
+    <!-- ALT KISIM -->
     <footer>
-        <p>&copy; 2026 xshezz.com - Tüm Hakları Saklıdır.</p>
+        <p>&copy; 2026 xshezz.com - Esporun Kalbi Burada Atıyor.</p>
     </footer>
 
 </body>
