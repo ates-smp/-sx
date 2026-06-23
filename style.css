@@ -1,200 +1,248 @@
-/* GENEL AYARLAR */
+/* bo3.gg PREMIUM RENK PALETİ VE TEMEL AYARLAR */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #0b0e14; /* Koyu Espor Teması Arka Planı */
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    background-color: #0f121d; /* bo3'ün imzası olan derin gece mavisi-siyah tonu */
+    color: #e2e8f0;
+    padding-bottom: 40px;
 }
 
-/* MENÜ (HEADER) TASARIMI */
-header {
-    background-color: #131722;
+/* ÜST MENÜ (NAVBAR) */
+.ust-menu {
+    background-color: #161b2c;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%;
-    border-bottom: 2px solid #1f2635;
+    padding: 15px 6%;
+    border-bottom: 1px solid #232b44;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.logo {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff4655; /* Valorant Kırmızısı tonu */
-    letter-spacing: 2px;
-}
-
-nav a {
-    color: #a3aab8;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-nav a:hover, nav a.active {
-    color: #ff4655;
-}
-
-/* ANA YERLEŞİM (LAYOUT) */
-.icerik-alani {
+.logo-alani {
     display: flex;
-    max-width: 1200px;
-    margin: 30px auto;
+    align-items: center;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.logo-x { color: #ff3e24; }
+.logo-metin { color: #ffffff; }
+
+.canli-badge {
+    background-color: #ff3e24;
+    color: white;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    font-weight: 800;
+}
+
+.nav-linkler a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.nav-linkler a:hover, .nav-linkler a.aktif {
+    color: #ffffff;
+    border-bottom: 2px solid #ff3e24;
+    padding-bottom: 5px;
+}
+
+/* ANA DÜZEN VE YAPILANDIRMA */
+.ana-konteyner {
+    display: flex;
+    max-width: 1300px;
+    margin: 25px auto;
     padding: 0 20px;
-    gap: 30px;
+    gap: 25px;
 }
 
-.maclar-kapsayici {
-    flex: 3;
-}
+.ana-icerik { flex: 3; display: flex; flex-direction: column; gap: 25px; }
+.bo3-sidebar { flex: 1; display: flex; flex-direction: column; gap: 25px; }
 
-.maclar-kapsayici h2 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #00f0ff; /* Neon Mavi şık bir espor rengi */
-}
-
-.yan-panel {
-    flex: 1;
-    background-color: #131722;
-    padding: 20px;
+/* BLOK YAPILARI (bo3.gg Stili Kutular) */
+.bo3-blok {
+    background-color: #161b2c;
+    border: 1px solid #232b44;
     border-radius: 8px;
-    border: 1px solid #1f2635;
-    height: fit-content;
+    padding: 20px;
 }
 
-.yan-panel h3 {
-    font-size: 16px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #1f2635;
+.blok-baslik {
+    margin-bottom: 18px;
+    border-bottom: 1px solid #232b44;
     padding-bottom: 10px;
 }
 
-.turnuva-oge {
-    background-color: #1b2230;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    font-size: 14px;
+.baslik-metin {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-/* MAÇ KARTLARI TASARIMI */
-.mac-karti {
-    background-color: #131722;
-    border-left: 4px solid #555;
+.simge-canli {
+    width: 10px;
+    height: 10px;
+    background-color: #ff3e24;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px #ff3e24;
+    animation: yan-son 1.5s infinite;
+}
+
+@keyframes yan-son { 0%{opacity:0.3;} 50%{opacity:1;} 100%{opacity:0.3;} }
+
+/* Gelişmiş bo3.gg Maç Kartları Tasarımı */
+.mac-listesi { display: flex; flex-direction: column; gap: 12px; }
+
+.bo3-mac-karti {
+    background-color: #1e253a;
+    border: 1px solid #2c3759;
+    border-radius: 6px;
     padding: 15px 20px;
-    margin-bottom: 15px;
-    border-radius: 0 8px 8px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
-.mac-karti.valorant { border-color: #ff4655; }
-.mac-karti.cs2 { border-color: #de9b35; }
-.mac-karti.lol { border-color: #005a82; }
+.bo3-mac-karti:hover {
+    transform: translateX(3px);
+    background-color: #232b44;
+}
 
-.oyun-turu {
-    font-weight: bold;
-    font-size: 12px;
-    background-color: #1b2230;
+.bo3-mac-karti.canli-aktif {
+    border-left: 4px solid #ff3e24;
+}
+
+.oyun-bilgisi {
+    font-size: 11px;
+    font-weight: 800;
     padding: 4px 8px;
     border-radius: 4px;
-}
-
-.takimlar {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.takim-adi {
-    font-weight: 500;
-}
-
-.skor {
-    background-color: #0b0e14;
-    padding: 5px 15px;
-    border-radius: 4px;
-    font-weight: bold;
-    font-family: 'Orbitron', sans-serif;
-}
-
-.mac-durumu {
-    font-size: 13px;
-    color: #a3aab8;
-}
-
-.mac-durumu.canli {
-    color: #ff4655;
-    font-weight: bold;
-    animation: kırpışma 1.5s infinite;
-}
-
-@keyframes kırpışma {
-    0% { opacity: 0.4; }
-    50% { opacity: 1; }
-    100% { opacity: 0.4; }
-}
-
-/* 🚨 REKLAM ALANLARI SÜSLEMELERİ (REKLAM GİBİ GÖRÜNMESİ İÇİN) */
-.reklam-konteyner {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.reklam-alani {
-    background-color: #1b2230;
-    border: 2px dashed #3a4763;
-    color: #637599;
+    width: 55px;
     text-align: center;
+}
+.oyun-bilgisi.cs2 { background-color: rgba(222, 155, 53, 0.15); color: #de9b35; }
+.oyun-bilgisi.valorant { background-color: rgba(255, 70, 85, 0.15); color: #ff4655; }
+
+.takim-sol, .takim-sag { flex: 1; font-weight: 600; font-size: 15px; }
+.takim-sol { text-align: right; padding-right: 20px; }
+.takim-sag { text-align: left; padding-left: 20px; }
+
+.skor-merkezi {
+    background-color: #0f121d;
+    padding: 6px 20px;
+    border-radius: 6px;
+    text-align: center;
+    min-width: 110px;
+    border: 1px solid #232b44;
+}
+.canli-skor { font-size: 16px; font-weight: 800; color: #ff3e24; }
+.skor-ayrac { color: #64748b; margin: 0 4px; }
+.mac-saat { font-size: 14px; font-weight: 700; color: #00f0ff; }
+
+.canli-yazi { font-size: 9px; font-weight: 700; color: #64748b; margin-top: 2px; }
+.tarih-yazi { font-size: 9px; font-weight: 700; color: #00f0ff; margin-top: 2px; }
+.mac-turnuva { font-size: 12px; color: #64748b; font-weight: 500; text-align: right; width: 120px; }
+
+/* OYUNCU GRİD SİSTEMİ */
+.oyuncu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.oyuncu-kart {
+    background-color: #1e253a;
+    border: 1px solid #2c3759;
+    border-radius: 6px;
+    padding: 15px;
+    transition: 0.2s;
+}
+.oyuncu-kart:hover { transform: translateY(-3px); border-color: #3b4b7a; }
+
+.oyuncu-ust {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2c3759;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+.oyuncu-nik { font-weight: 700; color: #ffffff; font-size: 15px; }
+.oyuncu-oyun { font-size: 10px; font-weight: 700; }
+.oyuncu-oyun.cs2 { color: #de9b35; }
+.oyuncu-oyun.valorant { color: #ff4655; }
+
+.oyuncu-detay p { font-size: 12px; color: #94a3b8; margin-bottom: 5px; }
+.oyuncu-detay p span { color: #ffffff; font-weight: 500; }
+
+/* SIDEBAR TURNUVALAR */
+.sidebar-blok { background-color: #161b2c; border: 1px solid #232b44; border-radius: 8px; padding: 20px; }
+.sidebar-blok h3 { font-size: 14px; font-weight: 700; margin-bottom: 15px; color: #94a3b8; }
+.sidebar-turnuva-liste { display: flex; flex-direction: column; gap: 10px; }
+
+.s-turnuva-oge {
+    background-color: #1e253a;
+    padding: 12px;
     border-radius: 6px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #2c3759;
+}
+.t-durum { font-size: 9px; font-weight: 800; padding: 2px 6px; border-radius: 4px; }
+.t-durum.canli { background-color: rgba(255, 62, 36, 0.15); color: #ff3e24; }
+.t-durum.yakinda { background-color: rgba(0, 240, 255, 0.15); color: #00f0ff; }
+.t-durum.bitti { background-color: rgba(148, 163, 184, 0.15); color: #94a3b8; }
+
+/* REKLAM ALANLARI YAPISI (SİSTEMLE TAM UYUMLU) */
+.reklam-kapsayici { display: flex; justify-content: center; margin: 15px 0; }
+.reklam-kutu {
+    background-color: #121624;
+    border: 1px dashed #2c3759;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* Reklam Boyutlandırmaları */
-.banner-ust .reklam-alani {
     width: 100%;
-    max-width: 728px;
-    height: 90px;
 }
+.reklam-etiket {
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    font-size: 8px;
+    font-weight: 700;
+    color: #475569;
+    letter-spacing: 0.5px;
+}
+.reklam-icerik { font-size: 11px; color: #475569; font-weight: 500; text-align: center; }
 
-.banner-orta .reklam-alani {
-    width: 100%;
-    height: 100px;
-}
-
-.banner-yan .reklam-alani {
-    width: 100%;
-    height: 250px;
-}
-
-.reklam-alani span {
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.reklam-alani p {
-    font-size: 11px;
-}
+/* Reklam Konum Boyutları */
+.banner-tepe .reklam-kutu { max-width: 728px; height: 90px; }
+.banner-orta .reklam-kutu { height: 90px; }
+.banner-dikey .reklam-kutu { height: 450px; }
 
 /* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #555;
-    font-size: 12px;
-    border-top: 1px solid #131722;
-    margin-top: 50px;
-}
+.bo3-footer { text-align: center; padding: 25px; font-size: 12px; color: #475569; margin-top: 40px; border-top: 1px solid #161b2c; }
