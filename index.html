@@ -3,180 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XSHEZZ | Espor Maç Sonuçları, İstatistikler ve Turnuvalar</title>
+    <title>XSHEZZ.com | Premium Espor Platformu & Canlı İstatistikler</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- BO3 TARZI ÜST MENÜ (NAVBAR) -->
-    <header class="ust-menu">
-        <div class="logo-alani">
-            <span class="logo-x">X</span><span class="logo-metin">SHEZZ</span>
-            <span class="canli-badge">GG</span>
+    <!-- ULUSLARARASI PREMIUM NAVBAR -->
+    <header class="bo3-navbar">
+        <div class="nav-sol">
+            <div class="premium-logo">X<span>SHEZZ</span></div>
+            <div class="live-indicator">PRO</div>
         </div>
-        <nav class="nav-linkler">
-            <a href="#canli-maclar" class="aktif">Maçlar</a>
-            <a href="#oyuncular">Oyuncular</a>
-            <a href="#turnuvalar">Turnuvalar</a>
-            <a href="#">Haberler</a>
+        <nav class="nav-orta">
+            <a href="#canli-merkez" class="nav-link aktif">Maç Merkezi</a>
+            <a href="#analizler" class="nav-link">Analizler & Haberler</a>
+            <a href="#istatistikler" class="nav-link">Oyuncu Veritabanı</a>
+            <a href="#turnuva-agaci" class="nav-link">Turnuvalar</a>
         </nav>
+        <div class="nav-sag">
+            <span class="veri-durumu">Anlık Veri Aktif</span>
+            <span class="yesil-nokta"></span>
+        </div>
     </header>
 
-    <!-- 1. REKLAM ALANI: BAŞLIK ALTI TEPE BANNER -->
-    <div class="reklam-kapsayici banner-tepe">
-        <div class="reklam-kutu">
-            <span class="reklam-etiket">REKLAM</span>
-            <div class="reklam-icerik">xshezz.com Üst Banner Alanı (728x90)</div>
+    <!-- 1. REKLAM ALANI: TEPE PREMIUM BANNER (728x90) -->
+    <div class="reklam-sektörü banner-tepe">
+        <div class="reklam-cerceve">
+            <span class="reklam-etiketi">SPONSORLU İÇERİK</span>
+            <div class="reklam-alani-metni">xshezz.com Skyscraper Üst Reklam Alanı</div>
         </div>
     </div>
 
-    <!-- ANA IÇERIK ALANI -->
-    <div class="ana-konteyner">
+    <!-- ANA PLATFORM DÜZENİ -->
+    <div class="platform-kapsayici">
         
-        <!-- SOL VE ORTA ALAN: MAÇLAR VE TABLOLAR -->
-        <main class="ana-icerik">
+        <!-- GENİŞ SOL KOLON: CANLI MERKEZ, HABERLER VE VERİTABANI -->
+        <main class="ana-panel-sol">
             
-            <!-- CANLI VE GELECEK MAÇLAR SEKTÖRÜ (bo3.gg Stili) -->
-            <section id="canli-maclar" class="bo3-blok">
-                <div class="blok-baslik">
-                    <h2 class="baslik-metin"><span class="simge-canli"></span> CANLI VE YAKLAŞAN MAÇLAR</h2>
+            <!-- CANLI MAÇ VE DERİN İSTATİSTİK PANELİ -->
+            <section id="canli-merkez" class="premium-kart">
+                <div class="kart-ust-bilgi">
+                    <h2 class="premium-baslik"><span class="canli-pulse"></span> CANLI MAÇ DETAYLARI & ANALİZ</h2>
+                    <span class="lig-adi">🏆 PGL MAJOR ANVERS 2026</span>
                 </div>
 
-                <div class="mac-listesi">
-                    <!-- CANLI MAÇ KARTI -->
-                    <div class="bo3-mac-karti canli-aktif">
-                        <div class="oyun-bilgisi cs2">CS2</div>
-                        <div class="takim-sol">
-                            <span class="takim-isim">Eternal Fire 🇹🇷</span>
+                <div class="derin-mac-merkezi">
+                    <div class="takim-blok">
+                        <div class="takim-logo-simge">EF</div>
+                        <span class="t-ad">Eternal Fire 🇹🇷</span>
+                        <div class="form-durumu">
+                            <span class="w">W</span><span class="w">W</span><span class="l">L</span><span class="w">W</span><span class="w">W</span>
                         </div>
-                        <div class="skor-merkezi">
-                            <span class="canli-skor">1</span>
-                            <span class="skor-ayrac">-</span>
-                            <span class="canli-skor">0</span>
-                            <div class="canli-yazi">HARİTA 2</div>
-                        </div>
-                        <div class="takim-sag">
-                            <span class="takim-isim">Natus Vincere</span>
-                        </div>
-                        <div class="mac-turnuva">PGL Major</div>
                     </div>
 
-                    <!-- YAKLAŞAN MAÇ KARTI -->
-                    <div class="bo3-mac-karti">
-                        <div class="oyun-bilgisi valorant">VALO</div>
-                        <div class="takim-sol">
-                            <span class="takim-isim">FUT Esports 🇹🇷</span>
+                    <div class="canli-skor-tahtasi">
+                        <div class="skor-ana-sayilar">1 : 0</div>
+                        <div class="harita-durumu">Devam Ediyor: Mirage (11-9)</div>
+                        <div class="veto-sureci">
+                            <span>Bans: Nuke, Anubis</span> | <span>Picks: Mirage, Inferno</span>
                         </div>
-                        <div class="skor-merkezi">
-                            <span class="mac-saat">21:00</span>
-                            <div class="tarih-yazi">BUGÜN</div>
+                    </div>
+
+                    <div class="takim-blok">
+                        <div class="takim-logo-simge">NAVI</div>
+                        <span class="t-ad">Natus Vincere</span>
+                        <div class="form-durumu">
+                            <span class="w">W</span><span class="l">L</span><span class="w">W</span><span class="l">L</span><span class="w">W</span>
                         </div>
-                        <div class="takim-sag">
-                            <span class="takim-isim">Fnatic</span>
-                        </div>
-                        <div class="mac-turnuva">VCT EMEA</div>
                     </div>
                 </div>
             </section>
 
-            <!-- 2. REKLAM ALANI: İÇERİK ORTASI BANNER -->
-            <div class="reklam-kapsayici banner-orta">
-                <div class="reklam-kutu">
-                    <span class="reklam-etiket">REKLAM</span>
-                    <div class="reklam-icerik">İçerik Ortası Reklam Alanı (Responsive)</div>
+            <!-- ESPOR DÜNYASINDAN TRANSFERLER VE HABERLER (YENİ İÇERİK) -->
+            <section id="analizler" class="premium-kart">
+                <h2 class="premium-baslik">📰 ÖNE ÇIKAN ESPOR HABERLERİ</h2>
+                <div class="haber-grid">
+                    <article class="haber-karti">
+                        <div class="haber-gorsel-taslak">TRANSFER</div>
+                        <div class="haber-icerik">
+                            <span class="haber-kategori cs2">CS2</span>
+                            <h3>Eternal Fire Kadrosunda Kritik Değişiklik!</h3>
+                            <p>Büyük Major turnuvası öncesi takımdaki roller yeniden dağıtılıyor. Analiz ekibimiz verileri inceledi...</p>
+                        </div>
+                    </article>
+
+                    <article class="haber-karti">
+                        <div class="haber-gorsel-taslak">GÜNCELLEME</div>
+                        <div class="haber-icerik">
+                            <span class="haber-kategori valorant">VALORANT</span>
+                            <h3>Yeni Valorant Ajanı Meta Dengelerini Sarstı</h3>
+                            <p>Profesyonel oyuncuların ilk maçlardaki tercih oranları ve ajan hakkındaki gizli istatistik raporu sitemizde.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 2. REKLAM ALANI: İÇERİK ORTASI ESNEK BANNER -->
+            <div class="reklam-sektörü banner-orta">
+                <div class="reklam-cerceve">
+                    <span class="reklam-etiketi">ADVERTISEMENT</span>
+                    <div class="reklam-alani-metni">xshezz.com Sayfa Ortası Akış Reklamı</div>
                 </div>
             </div>
 
-            <!-- EN POPÜLER PROFESYONEL OYUNCULAR (bo3.gg Stili) -->
-            <section id="oyuncular" class="bo3-blok">
-                <div class="blok-baslik">
-                    <h2 class="baslik-metin">⭐ POPÜLER PROFESYONEL OYUNCULAR</h2>
+            <!-- GELİŞMİŞ PROFESYONEL OYUNCU VERİTABANI (bo3.gg TIER 1 SİSTEMİ) -->
+            <section id="istatistikler" class="premium-kart">
+                <h2 class="premium-baslik">📊 GLOBAL OYUNCU İSTATİSTİKLERİ VE RATING</h2>
+                <div class="tablo-filtreler">
+                    <span class="filtre-buton aktif">Tümü</span>
+                    <span class="filtre-buton">En Yüksek Rating</span>
+                    <span class="filtre-buton">Türkiye Bölgesi</span>
                 </div>
-
-                <div class="oyuncu-grid">
-                    <!-- Oyuncu 1 -->
-                    <div class="oyuncu-kart">
-                        <div class="oyuncu-ust">
-                            <span class="oyuncu-nik">XANTARES</span>
-                            <span class="oyuncu-oyun cs2">CS2</span>
-                        </div>
-                        <div class="oyuncu-detay">
-                            <p>Takım: <span>Eternal Fire</span></p>
-                            <p>Rol: <span>Rifler (Entry)</span></p>
-                            <p>Ülke: <span>Türkiye 🇹🇷</span></p>
-                        </div>
-                    </div>
-
-                    <!-- Oyuncu 2 -->
-                    <div class="oyuncu-kart">
-                        <div class="oyuncu-ust">
-                            <span class="oyuncu-nik">cNed</span>
-                            <span class="oyuncu-oyun valorant">VALO</span>
-                        </div>
-                        <div class="oyuncu-detay">
-                            <p>Takım: <span>FUT Esports</span></p>
-                            <p>Rol: <span>Düellocu</span></p>
-                            <p>Ülke: <span>Türkiye 🇹🇷</span></p>
-                        </div>
-                    </div>
-
-                    <!-- Oyuncu 3 -->
-                    <div class="oyuncu-kart">
-                        <div class="oyuncu-ust">
-                            <span class="oyuncu-nik">ZywOo</span>
-                            <span class="oyuncu-oyun cs2">CS2</span>
-                        </div>
-                        <div class="oyuncu-detay">
-                            <p>Takım: <span>Vitality</span></p>
-                            <p>Rol: <span>AWPer</span></p>
-                            <p>Ülke: <span>Fransa 🇫🇷</span></p>
-                        </div>
-                    </div>
-
-                    <!-- Oyuncu 4 -->
-                    <div class="oyuncu-kart">
-                        <div class="oyuncu-ust">
-                            <span class="oyuncu-nik">aspas</span>
-                            <span class="oyuncu-oyun valorant">VALO</span>
-                        </div>
-                        <div class="oyuncu-detay">
-                            <p>Takım: <span>Leviatán</span></p>
-                            <p>Rol: <span>Düellocu</span></p>
-                            <p>Ülke: <span>Brezilya 🇧🇷</span></p>
-                        </div>
-                    </div>
+                <div class="premium-tablo-kapsayici">
+                    <table class="bo3-tablo">
+                        <thead>
+                            <tr>
+                                <th>Oyuncu</th>
+                                <th>Mevcut Takımı</th>
+                                <th>Branş</th>
+                                <th>Oynanan Harita</th>
+                                <th>K/D Oranı</th>
+                                <th>KDA Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="v-oyuncu"><b>XANTARES</b> 🇹🇷</td>
+                                <td class="v-takim">Eternal Fire</td>
+                                <td><span class="oyun-badge cs2">CS2</span></td>
+                                <td>412</td>
+                                <td class="pozitif">+1.24</td>
+                                <td><span class="rating-skor yuksek">1.31</span></td>
+                            </tr>
+                            <tr>
+                                <td class="v-oyuncu"><b>cNed</b> 🇹🇷</td>
+                                <td class="v-takim">FUT Esports</td>
+                                <td><span class="oyun-badge valorant">VALO</span></td>
+                                <td>289</td>
+                                <td class="pozitif">+1.18</td>
+                                <td><span class="rating-skor yuksek">1.25</span></td>
+                            </tr>
+                            <tr>
+                                <td class="v-oyuncu"><b>ZywOo</b> 🇫🇷</td>
+                                <td class="v-takim">Team Vitality</td>
+                                <td><span class="oyun-badge cs2">CS2</span></td>
+                                <td>534</td>
+                                <td class="pozitif">+1.32</td>
+                                <td><span class="rating-skor elit">1.38</span></td>
+                            </tr>
+                            <tr>
+                                <td class="v-oyuncu"><b>aspas</b> 🇧🇷</td>
+                                <td class="v-takim">Leviatán</td>
+                                <td><span class="oyun-badge valorant">VALO</span></td>
+                                <td>310</td>
+                                <td class="pozitif">+1.26</td>
+                                <td><span class="rating-skor elit">1.34</span></td>
+                            </tr>
+                            <tr>
+                                <td class="v-oyuncu"><b>w0nderful</b> 🇺🇦</td>
+                                <td class="v-takim">Natus Vincere</td>
+                                <td><span class="oyun-badge cs2">CS2</span></td>
+                                <td>198</td>
+                                <td class="pozitif">+1.12</td>
+                                <td><span class="rating-skor">1.18</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
 
         </main>
 
-        <!-- SAĞ ALAN: SIDEBAR VE TURNUVALAR -->
-        <aside class="bo3-sidebar">
+        <!-- DAR SAĞ KOLON: TURNUVALAR VE SABİT BANNER -->
+        <aside class="ana-panel-sag">
             
-            <section id="turnuvalar" class="sidebar-blok">
-                <h3>🏆 AKTİF TURNUVALAR</h3>
-                <div class="sidebar-turnuva-liste">
-                    <div class="s-turnuva-oge">
-                        <span class="t-isim">PGL Major Copenhagen</span>
-                        <span class="t-durum canli">CANLI</span>
+            <section id="turnuva-agaci" class="premium-kart-sidebar">
+                <h3 class="sidebar-baslik">🏆 DEVAM EDEN TURNUVALAR</h3>
+                <div class="sidebar-etkinlikler">
+                    <div class="etkinlik-kutu">
+                        <div class="etkinlik-detay">
+                            <h4>VCT Champions 2026</h4>
+                            <p>Ödül Havuzu: $2,250,000</p>
+                        </div>
+                        <span class="durum-badge canlı">CANLI</span>
                     </div>
-                    <div class="s-turnuva-oge">
-                        <span class="t-isim">VCT Masters 2026</span>
-                        <span class="t-durum yakinda">YAKINDA</span>
+
+                    <div class="etkinlik-kutu">
+                        <div class="etkinlik-detay">
+                            <h4>IEM Cologne 2026</h4>
+                            <p>Ödül Havuzu: $1,000,000</p>
+                        </div>
+                        <span class="durum-badge bekliyor">02 TEM</span>
                     </div>
-                    <div class="s-turnuva-oge">
-                        <span class="t-isim">Intel Extreme Masters</span>
-                        <span class="t-durum bitti">BİTTİ</span>
+
+                    <div class="etkinlik-kutu">
+                        <div class="etkinlik-detay">
+                            <h4>PGL Major Shanghai</h4>
+                            <p>Aşama: Eleme Grupları</p>
+                        </div>
+                        <span class="durum-badge canlı">CANLI</span>
                     </div>
                 </div>
             </section>
 
-            <!-- 3. REKLAM ALANI: SAĞ SİDEBAR DİKEY REKLAM -->
-            <div class="reklam-kapsayici banner-dikey">
-                <div class="reklam-kutu">
-                    <span class="reklam-etiket">REKLAM</span>
-                    <div class="reklam-icerik">Sağ Panel Dikey Reklamı (300x600)</div>
+            <!-- 3. REKLAM ALANI: SAĞ SIDEBAR SABİT DİKEY BANNER (300x600) -->
+            <div class="reklam-sektörü banner-dikey-sag">
+                <div class="reklam-cerceve">
+                    <span class="reklam-etiketi">SPONSOR ADS</span>
+                    <div class="reklam-alani-metni">Sidebar Sabit Premium Reklam Alanı</div>
                 </div>
             </div>
 
@@ -184,9 +219,13 @@
 
     </div>
 
-    <!-- ALT BİLGİ -->
-    <footer class="bo3-footer">
-        <p>&copy; 2026 xshezz.com | Tüm espor dünyası tek adreste.</p>
+    <!-- PRESTİJLİ FOOTER -->
+    <footer class="premium-footer">
+        <div class="footer-icerik">
+            <div class="footer-logo">X<span>SHEZZ</span></div>
+            <p>Dünya genelindeki tüm profesyonel espor turnuvaları, oyuncu performans skorları ve anlık maç verileri tek bir merkezde.</p>
+            <div class="telif">&copy; 2026 xshezz.com. Veriler simulasyon amaçlı tasarlanmıştır.</div>
+        </div>
     </footer>
 
 </body>
